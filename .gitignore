@@ -1,4 +1,4 @@
 .vscode/*
-main
+PomodoroTimer
 *.o
 .DS_STORE
