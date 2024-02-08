@@ -9,3 +9,6 @@ Create Pomodoro mode[ ]\
 Create UI [ ]
 
 
+Currently, music is played with sox \
+Macos:\
+\   brew install sox

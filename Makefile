@@ -1,16 +1,31 @@
 CC=g++ -g -Wall -std=c++17
 
-SOURCES=main.cpp
+# SOURCES=main.cpp pomodoro.cpp timer.cpp
 
-all: main
+all: PomodoroTimer
 
-TIMER_OBJS=${SOURCES:.cpp=.o}
+# TIMER_OBJS=${SOURCES:.cpp=.o}
 
-# Generic rules for compiling a source file to an object file
-%.o: %.cpp
-	${CC} -c $<
-%.o: %.cc
-	${CC} -c $<
+# # Generic rules for compiling a source file to an object file
+# %.o: %.cpp
+# 	${CC} -c $<
+# %.o: %.cc
+# 	${CC} -c $<
+
+# clean:
+# 	rm -f ${TIMER_OBJS} main
+
+
+DEPS = pomodoro.h timer.h
+OBJ = main.o pomodoro.o timer.o
+
+%.o: %.cpp $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+PomodoroTimer: $(OBJ)
+	$(CC) -o $@ $^ $(CFLAGS)
+
+.PHONY: clean
 
 clean:
-	rm -f ${TIMER_OBJS} main
+	rm -f $(OBJ) PomodoroTimer
