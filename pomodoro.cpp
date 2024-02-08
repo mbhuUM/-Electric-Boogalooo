@@ -1,4 +1,4 @@
-#include "pomodoro.h"
+#include "dependencies/pomodoro.h"
 
 PomoDoro::PomoDoro(long _minutes, long _seconds, int _untilLong)
 {

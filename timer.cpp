@@ -1,4 +1,4 @@
-#include "timer.h"
+#include "dependencies/timer.h"
 
 void startTimer(int durationInSeconds) {
     // Convert seconds to a duration object
