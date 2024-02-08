@@ -16,7 +16,7 @@ all: PomodoroTimer
 # 	rm -f ${TIMER_OBJS} main
 
 
-DEPS = pomodoro.h timer.h
+DEPS = dependencies/pomodoro.h dependencies/timer.h
 OBJ = main.o pomodoro.o timer.o
 
 %.o: %.cpp $(DEPS)

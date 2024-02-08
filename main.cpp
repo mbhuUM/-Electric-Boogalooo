@@ -1,8 +1,8 @@
 #include <iostream>
 #include <chrono>
 #include <thread>
-#include "pomodoro.h"
-#include "timer.h"
+#include "dependencies/pomodoro.h"
+#include "dependencies/timer.h"
 
 
 
