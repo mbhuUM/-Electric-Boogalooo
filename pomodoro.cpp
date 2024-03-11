@@ -64,7 +64,7 @@ void PomoDoro::startPomodoro(PomoDoro settings)
         //study time, odd runs
         else if(numLoops % 2 == 1)
         {
-
+            PomoDoro::studyTime(settings);
         } //else odd
 
         //even - mini breaks
