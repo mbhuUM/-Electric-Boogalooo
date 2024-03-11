@@ -1,6 +1,6 @@
 CC=g++ -g -Wall -std=c++17
 
-# SOURCES=main.cpp pomodoro.cpp timer.cpp
+# SOURCES=main.cpp src/pomodoro.cpp src/timer.cpp
 
 all: PomodoroTimer
 
